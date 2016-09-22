@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <!--<script>-->
+        <!--$(document).ready(function(){-->
+            <!--$("button").click(function(){-->
+                <!--$.post("http://reqres.in/api/users",-->
+                        <!--{-->
+                            <!--"name": "morpheus",-->
+                            <!--"job": "leader"-->
+                        <!--},-->
+                        <!--function(data,status){-->
+                            <!--alert("Data: " + data.name + "\ndata: " + data.job + "\ndata: " + data.id + "\ndata: " + data.createdAt);-->
+                        <!--});-->
+            <!--});-->
+        <!--});-->
+    <!--</script>-->
+
+
+
+    <script>
+        $.ajax({
+            url: "http://reqres.in/api/users/",
+            type: "post",
+            data: {
+                "name": "morpheus",
+                "job": "leader"
+            },
+            success: function(response){
+                  alert(JSON.stringify(response));
+            }
+
+        });
+    </script>
+</head>
+<body>
+
+<!--<button>Send</button>-->
+
+</body>
+</html>

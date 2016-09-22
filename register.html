@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#button").click(function(){
+                alert("You are registered!!!!");
+            });
+        });
+    </script>
+</head>
+<body>
+
+
+<div id="container">
+    <header>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </header>
+    <main>
+        <div class="top">
+            <div style="float:left; width:33%; height: 100%;">
+                <img src="http://orig12.deviantart.net/a876/f/2009/057/1/c/skull_logo_fc_motorz_by_hectanex.jpg" alt="logo" style="float:left; width:200px;height:200px;">
+                <div><h2>Company Name</h2></div>
+            </div>
+            <div style="float:left; width:33%; height:100%; ">
+
+
+                <ul>
+                    <li><a href="bootstrap.html">Home</a></li>
+                    <li><a href="video.html">Videos</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+
+            </div>
+            <div style="float:left; width:34%; height: 100%; ">
+
+                <div style="float: left; margin: 0px 30px">
+                    <h3 style="color: blue">Related Links</h3>
+                    <a href="https://www.facebook.com/"> <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8rLT0tMTU9Ojo6IzdCPTc4QzQxRj4BCgoKDQwNGg8PGjclHyU3NzcyNzgtNy01NTc1NzU1NTc1Ny83LjU1NS01LTUrNTU1NTU1LSstNTUtKystNSstN//AABEIACgAKAMBIgACEQEDEQH/xAAaAAADAQEBAQAAAAAAAAAAAAAABQYHAwQB/8QALhAAAAUCAggGAwEAAAAAAAAAAAECAwQFEQYSExQVITFRU3FBYZGTorIjMlIX/8QAGQEAAgMBAAAAAAAAAAAAAAAAAgMAAQQF/8QAHREBAAICAwEBAAAAAAAAAAAAAQACAxEhMUEyEv/aAAwDAQACEQMRAD8ArMW1l52oONJVZtpw0ITxIsu4z73CPaUnq/EhzxI9aszE34SHPsFmm8x0KVPyTNZ5jfaUnq/EgbSk9X4kFGm8xT4fwlMrEJMxUhEdld8l05jVbde3IXZrU2ygXqdMO1p+LOSo13Qai0hcMxGdvXeAL58BVFrpQVPE6f4zzEm3EyAM2YFEjse+onxS7lxFUS5SV/Ywq0w9OMDUWJalZKray54eYTZ1/wAq9Bqr8kS9x1S2VVGpRYSFkhUhwmyUZXtcbMVGfRhUqO3KJDxR9ET6SMt/MYAh11tZLb0iFpO5KTcjI+42NyQ//lBPk67p9QI8+Y81+/G4TmHiHj9kPUoTtIxO3Aek6w4hbeZe/wAbHbf3H0IKa8+/Vo63jdcWbyLrWZmf7F4mABn83Cx+y2x3hqY3VHpkZpbjDys90FfKZ8dwlNmTOi/7KgACzKhqE0GGzJnRf9lQuV1tk8E7FKJP1rVSazaueXN35AAI5V8kKaifB+GZsupsuPNOIjtrJa1LTlvY72IgAAAtds7YQan/2Q==" alt="facebook.com"></a>
+                    <a href="https://twitter.com/"> <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0uIiAdHx8kKDQsJCYxJycqLT0tMTVDOjM6IzI/RD9AQzQxOjcBCgoKDQ0NGxAQGjcgHyUxLzArNyw3Nzc3Ky01Ky0uMDAvNTI1OC44Ky0rLS0tKzcrMDctLS0rLSstLTUrLS0tLf/AABEIADAAMAMBEQACEQEDEQH/xAAaAAACAwEBAAAAAAAAAAAAAAAEBQEDBgAH/8QANRAAAQMDAQQHBAsAAAAAAAAAAQIDBAAFERIhMUGTBhMVUVVhYxRUcbEiIyQlMlOBgpGhwf/EABkBAAMBAQEAAAAAAAAAAAAAAAADBAIFAf/EACkRAAEDAgQFBAMAAAAAAAAAAAEAAgMEERMhMlESMTNScRRBYZFCgdH/2gAMAwEAAhEDEQA/APS5s19cp7LzqQhxSEpbXpAA+ZqtkbeFc2aZ/Gc1R7U97zJ5xreG3ZKxn7rvanveZPONeYbdkYz91wkvndIk840YbdkYz913tT3vEnnGvcNuyMZ+6vhTH0y2cPuqCnEoKXF6gQf9rD2N4U2GZ/GM0vuTxafnKAyUOOKA7yNtbZoCTN1CPlWSYsiEwy5IIWhaEkvAYGojaD3VmOUOyPNMnp3Rm4zCH6wbyQB301S3TCy2dNwjInXMuFt4amYqVlKUo4FWPxKO/uGcYqN8ricuS6sNMxrbuFyjZlga6v7A8uMRwx1gx5BR30NlcF6+mjdna3hJrfrRNjtOJdBElI+tcStR28dOwfAbqebmO5UTQBMAN0NdXCmdcAAFEOrwk8fKtx6AlT9U+VqrQXuzGUyy059ABKkHIWjGzOf4qE2vkuw24GZuh5Vht7+rSl2PqznqF6Qc+W0VoSPHIpbqeJ3MJkwlLDDTLedDaAhOd+AMVhOVc54NwZCycBLavlWmC7gFiU2YT8LI21f3jBT66auk0lciDqNQ13Xpu84euqvY9AWajqu8pl0WmOl1yM5KQGhtaYUjae/Cs9/CpqhtjeyuopAW8JOe38WlKsHBqdXKNdCEi6T3FKG0wm1fTVhTnkOA/WqadmfEoK2Wwwx+0mtC9V3gj101RJoKip+q3yh7+tQvM8I06uuONW6iPQEVFsY33UwYUCVj228lkcWm2+rUf3nOPiKU903sPpPhjpTmXfeS1KLhbIjCGkTGEtNp0pHWajj+yamw3n2V5nhA1BLbh0nbSkotyStf5qxgD4DjTmUx/JSy14GUf2s2p5S1qWtRUtRypROSTVgFsguYSSblG2Jeb1BHrCly6CnU/VaiukNmuRvElxqI6626vWlTYyMViKRnABdNqIJDISAl3Y118Ok8s0zEZukenl7So7Guvh0jlmjFZuj08vaV3Y118Ok8s0YjN0enl7Sp7Guvh8nlmjEZuj08vaUw6P2e5JvMVx2G6022vWpTicDArEsjOA5p9PBIJASF/9k=" alt="twitter.com"></a>
+                    <a href="https://in.linkedin.com/"> <img src="http://calissoninc.com/cuski-usa/plugins/plxSocialButtons/icons/1/linkedin_icon.png" alt="linkedin.com"></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="middle">
+            <div style="float:left; width:60%; height: 100%;overflow:auto;">
+                <form action="success.html" style="margin: 20px">
+                    <h2>Register Yourself!!!</h2>
+                    <table>
+                        <tr>
+                            <td>Full Name</td>
+                            <td><input type="text" id="fname" name="fname"></td><br>
+                        </tr>
+                        <tr>
+                            <td>Email Id</td>
+                            <td><input type="email" id="email" name="email"></td><br>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td><input type="password" id="password" name="password"></td><br>
+                        </tr>
+                        <tr>
+                            <td>Contact Number</td>
+                            <td ><input type="tel" id="tel" name="tel"></td><br>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="agree"  > I agree to your terms and conditions.<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit" value="Submit">
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </form>
+
+
+
+            </div>
+            <div style="float:left; width:40%; height: 100%;">
+                <div style="margin:10px">
+                    <form action="success.html" style="margin: 20px">
+                        <h2>login!!!</h2>
+                        <table>
+                        Email Id <input type="email" id="email1" name="email"><br>
+                        Password <input type="password" id="password1" name=password><br>
+                        <input type="submit" id="button" value="login">
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <h5 style="float: right">copyright</h5>
+        </div>
+    </main>
+</div>
+</body>
+</html>

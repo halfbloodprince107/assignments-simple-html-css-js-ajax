@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="demo_form.asp" method="post">
+    <input type="text" name="fname" required>
+    <input type="submit" value="Submit">
+    <input type="text" name="fname" disabled>
+    <input type="submit" value="Submit">
+
+
+    <input id="id1" type="number" min="100" max="300">
+    <button onclick="myFunction()">OK</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var inpObj = document.getElementById("id1");
+            if (inpObj.checkValidity() == false) {
+                document.getElementById("demo").innerHTML = inpObj.validationMessage;
+            }
+        }
+    </script>
+    <h1>What Can JavaScript Do?</h1>
+
+    <p id="demo2">JavaScript can change HTML content.</p>
+
+    <button type="button" onclick="document.getElementById('demo2').innerHTML = 'Hello JavaScript!'">Click Me!</button>
+
+
+
+    <button onclick="document.getElementById('myImage').src='img/1.jpeg'">change the photo</button>
+
+    <img id="myImage" src="img/2.jpeg" style="width:100px">
+
+    <button onclick="document.getElementById('myImage').src='img/2.jpeg'">change the photo</button><br>
+    <br>
+    <br>
+
+
+
+
+    <br>
+    <br>
+    <br>
+
+
+    <img id="demo1" src="img/2.jpeg" style="width:100px">
+
+    <button type="button" onmouseover="document.getElementById('demo1').style.height='35px'.width='35px'" ondblclick="document.getElementById('demo1').style.height='100px'.width='100px'">Click Me!</button>
+
+
+
+    <img src="img/2.jpeg" style="width:100px" onmouseover="style.height='35px'.width='35px'" onmouseout="style.height='100px'.width='100px'">
+</form>
+
+
+
+<form id="frm1" action="success.html">
+    First name: <input type="text" name="fname" value="Donald"><br>
+    Last name: <input type="text" name="lname" value="Duck"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<p>Click "Try it" to display the value of each element in the form.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo3"></p>
+
+<script>
+    function myFunction() {
+        var x = document.forms["frm1"];
+        var text = "";
+        var i;
+        for (i = 0; i < x.length ;i++) {
+            text += x.elements[i].value + "<br>";
+        }
+        document.getElementById("demo3").innerHTML = text;
+    }
+</script>
+
+
+
+
+<button type="button" onclick="myFunction()">Set background color</button>
+
+<script>
+    function myFunction() {
+        document.body.style.backgroundColor = "blue";
+    }
+</script>
+</body>
+</html>
